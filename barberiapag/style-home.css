@@ -1,0 +1,81 @@
+
+.tituloPrincipal{
+
+padding-left: 30px;
+font-family: helvetica;
+font-size: 40pt;
+color: #9E4D27;
+
+}
+#banner{
+
+width: 100%;
+
+}
+
+  .principal{
+    
+    background-color: #FBF0EA;
+    padding: 20px;
+  }
+
+  .tituloCentralizado{
+
+    text-align:center;
+     }
+    
+
+    p{
+
+    text-align: center;
+    
+
+    }
+
+
+    em strong{
+
+    color: #9E4D27;
+
+    }
+
+    #mision{
+
+    font-size: 20px;
+
+    }
+
+    .diferenciales{
+      
+      background-color: #ffffff;
+      padding: 30px;
+    }
+
+
+    .items{
+      font-style: italic;                  
+/* .items accede a los elementos de una lista o array, el punto señala el inicio de los elementos de la lista */
+
+    }
+
+    ul{
+
+      display: inline-block;      /* inline ajusta el tamaño de las imagenes en el bloque,
+                                   block por defecto en listas, display, listas ocupan 100% de pantalla,
+                                    display altera su patron de comportamiento*/                         
+      vertical-align: top;
+      width: 20%;
+      margin-right: 15%;
+
+    }
+
+    .imagendiferenciales{
+
+      width: 50%;
+
+    }
+
+
+    
+
+

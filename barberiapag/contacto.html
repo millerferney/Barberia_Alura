@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title> Contacto - Barbería Alura</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+
+</head>
+
+
+ <body>
+
+    <header>
+
+        <div class="caja">  
+            <h1><img src="imagenes/logo.png" alt="Logo de la Barbería Alura"></h1> 
+                                                <!-- alt etiqueta de titulo alternativo funciona como una guia en caso 
+                                                    de perdida de datos de las imagenes o elementos -->
+                <nav>
+
+                     <ul>
+
+                         <li><a href="index.html">Home</a></li>
+                         <li><a href="productos.html">Productos</a></li>
+                         <li><a href="contacto.html">Contacto</a></li>
+
+                     </ul>
+
+                </nav>
+        </div>
+
+        
+
+    </header>
+        <main class="contacto-main">
+
+            
+            <form> <label for="nombreapellido"> Nombre y Apellido</label> 
+                    <input type="text" id="nombreapellido" class="input-padron" required>
+
+                    <label for="correoelectronico"> Correo Electrónico</label>
+                    <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+
+                    <label for="telefono"> teléfono</label>
+                    <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+                    <!-- required sirve para pedir datos obligatorios al usuario, placeholder funciona como una guia 
+                    para el usuario -->
+
+                    <label for="mensaje">mensaje</label>
+                    <textarea cols="70" rows="10" class="input-padron" required> </textarea>
+
+                    <fieldset>  
+                        <!-- fieldset marca los elementos de un formulario como un grupo de elementos -->
+
+                        <legend> ¿Cómo le gustaría que lo contactemos?</legend>
+                        <!-- legend representa el contenido restante dentro del formulario como lo es el texto -->
+
+                        <label for="radio-email"><input type="radio" name="contacto" value="email" 
+                        id="radio-email"> Email</label>
+                        
+    
+                        <!-- propiedad name sirve para que el formulario solo se pueda completar una vez -->
+
+                        <label for="radio-telefono"><input type="radio" name="contacto" value="telefono"
+                        id="radio-telefono"> teléfono</label>
+                       
+    
+                        <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp"
+                        id="radio-whatsapp" checked> WhatsApp</label>
+                            <!-- checked marca por defecto un elemente de formulario -->
+                    </fieldset>
+                 
+                    <fieldset>
+                        <legend>¿En cuál horario prefiere ser atendido?</legend>
+                        <select>
+
+                            <option>Mañana</option>
+                            <option>Tarde</option>
+                            <option>Noche</option>
+
+                        </select>
+                    </fieldset>
+                    
+
+                    <label class="checkbox"><input type="checkbox" checked>Le gustaría recibir novedades de la Barbería Alura</label>
+
+                    <input type="submit" value="Enviar Formulario" class="enviar">
+                 
+                    
+            </form>
+                
+            <table>
+              <thead>  
+                   <!-- thead representa un encabezado dentro de una tabla o celda principal
+                    tbody, y tfoot, representan el orden semantico de la tabla -->
+                <tr>                          
+                   <th>Día</th>   
+                    <!-- th representa una celda de encabezado -->
+                    <th>Horario</th> 
+                </tr> 
+              </thead>
+
+                <tbody>
+                    <tr>
+                        <!-- table rows tr representan las lineas o filas -->
+                       <td>Lunes</td> 
+                       <!-- td columnas -->
+                       <td>08h ~ 20h</td> 
+                    </tr> 
+                    <tr>
+                       <td>Miércoles</td> 
+                       <td>08h ~ 20h</td> 
+                    </tr> 
+                    <tr>
+                       <td>Viernes</td> 
+                       <td>08h ~ 20h</td> 
+                    </tr> 
+                </tbody>
+                
+            </table>
+
+
+
+        </main>
+
+
+            <footer>
+
+                <img src="imagenes/logo-blanco.png" alt="Logo de la Barbería Alura">
+                <p class="copyright"> &copy; copyright Barbería Alura -2022</p>
+
+
+            </footer>
+
+
+
+ </body>
+
+
+</html>
